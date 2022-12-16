@@ -1,0 +1,220 @@
+﻿{
+    "widgets": [
+        {
+            "style": {
+                "media": {}, 
+                "colors": {
+                    "text": "#59437a", 
+                    "button": "#59437a", 
+                    "buttonText": "#ffffff", 
+                    "background": "#ffffff"
+                }, 
+                "css": "/*#region Colors */\n/*#endregion*/\n@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap');\n:host {\n  top: 0;\n  right: 0;\n  bottom: 0;\n  left: 0;\n}\n:host .container {\n  margin: auto;\n}\n.container {\n  font-family: Poppins, \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  box-shadow: 0 11px 32px -5px rgba(54, 61, 77, 0.15);\n}\n@media (min-width: 960px) {\n  .container {\n    box-shadow: 0 10px 24px 0 rgba(54, 61, 77, 0.15);\n  }\n}\n.title {\n  font-weight: 900;\n  font-size: 24px;\n  line-height: 1.3333;\n  margin-bottom: 24px;\n}\n@media (min-width: 960px) {\n  .title {\n    font-size: 28px;\n    line-height: 1.2857;\n  }\n}\n.description {\n  font-size: 16px;\n  margin-bottom: 24px;\n}\n.no-fields .form {\n  margin-top: 8px;\n}\n.fields {\n  margin-bottom: 32px;\n}\n.field + .field {\n  margin: 24px 0 0 0;\n}\n.field-title {\n  margin: 0 0 12px 0;\n}\n.radio .field-title,\n.checkbox .field-title {\n  margin: 0 0 16px 0;\n}\n.buttons {\n  margin: -6px;\n}\n.buttons .button {\n  margin: 6px;\n  border-radius: 6px;\n}\n.button.secondary,\n.button.secondary.icon {\n  padding-left: 0;\n  padding-right: 0;\n  color: rgba(89, 67, 122, 0.3);\n  background-color: transparent;\n  font-weight: normal;\n}\n.button.secondary:hover,\n.button.secondary.icon:hover,\n.button.secondary:focus,\n.button.secondary.icon:focus {\n  color: rgba(89, 67, 122, 0.7);\n  background-color: transparent;\n}\n.input-text,\n.input-textarea,\n.input-select {\n  border: none;\n  border-bottom: solid 1px rgba(89, 67, 122, 0.1);\n  border-radius: 0;\n  background-color: transparent;\n}\n.input-text::placeholder,\n.input-textarea::placeholder,\n.input-select::placeholder {\n  color: rgba(89, 67, 122, 0.3);\n}\n.input-text {\n  padding: 0 0 11px 0;\n}\n.input-textarea {\n  padding: 0;\n}\n.input-select select {\n  padding: 0 24px 11px 0;\n}\n.input-select:after {\n  top: 8px;\n  transform: none;\n  right: 0;\n}\n.input-check label {\n  margin-bottom: 20px;\n  border-radius: 4px;\n}\n.input-check label span {\n  padding-left: 36px;\n}\n.input-check label span:before {\n  width: 24px;\n  height: 24px;\n  top: 0;\n}\n.input-check label input[type='radio'] + span:before,\n.input-check label input[type='checkbox'] + span:before {\n  background-color: transparent;\n  border: 1px solid rgba(89, 67, 122, 0.1);\n}\n.input-check label input[type='radio'] + span:after,\n.input-check label input[type='checkbox'] + span:after {\n  left: 4px;\n}\n.input-check label input[type='radio']:checked + span:after,\n.input-check label input[type='checkbox']:checked + span:after {\n  left: 4px;\n}\n.input-rating label {\n  width: 40px;\n  height: 32px;\n}\n.note {\n  margin: 32px 0 0 0;\n  color: rgba(89, 67, 122, 0.3);\n}\n@keyframes scale-in-center {\n  0% {\n    transform: scale(0.5);\n    opacity: 0;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 1;\n  }\n}\n:host(.enter) .container {\n  animation: scale-in-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;\n}\n:host(.leave) .container {\n  animation: scale-in-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both reverse;\n}\n@keyframes shake {\n  100% {\n    transform: none;\n  }\n  0%,\n  99% {\n    transform: translate(0, 0);\n  }\n  20% {\n    transform: translateX(-10px);\n  }\n  60% {\n    transform: translateX(-5px);\n  }\n  40% {\n    transform: translateX(10px);\n  }\n  80% {\n    transform: translateX(5px);\n  }\n}\n.form.submit .invalid {\n  animation: shake 600ms;\n}\n\n/*#region Colors */\n/*#endregion*/\n.close,\n.back {\n  margin: 17px 17px 0 0;\n}\n@media screen and (min-width: 960px) {\n  .close,\n  .back {\n    margin: 21px 21px 0 0;\n  }\n}\n.container {\n  border-radius: 0;\n}\n.content,\n.description {\n  font-size: 14px;\n  line-height: 22px;\n}\n.content {\n  align-items: center;\n}\n.description {\n  width: 260px;\n  margin-bottom: 32px;\n}\n.body {\n  padding: 48px 26px 48px 26px;\n  border: 1px solid #59437a;\n  text-align: center;\n}\n@media screen and (min-width: 960px) {\n  .body {\n    padding: 86px 60px 86px 60px;\n  }\n}\n.title {\n  font-size: 32px;\n  line-height: 40px;\n}\n@media screen and (min-width: 960px) {\n  .title {\n    font-size: 40px;\n    line-height: 48px;\n  }\n}\n.input-text {\n  padding: 13px 16px;\n  border: 1px solid rgba(89, 67, 122, 0.4);\n}\n@media (max-width: 960px) {\n  .input-text {\n    text-align: center;\n  }\n}\n.input-text:hover {\n  border-color: rgba(89, 67, 122, 0.6);\n}\n.input-text:focus {\n  border-color: #59437a;\n}\n.fields {\n  width: auto;\n  flex-grow: 1;\n  margin-bottom: 8px;\n}\n@media screen and (min-width: 960px) {\n  .fields {\n    margin: 0 12px 0 0;\n  }\n}\n.content .form {\n  width: 100%;\n  margin: 0;\n}\n@media screen and (min-width: 960px) {\n  .content .form {\n    flex-direction: row;\n    justify-content: center;\n    align-items: flex-end;\n  }\n}\n.content .form .button {\n  flex-grow: 1;\n  border-radius: 0;\n  font-weight: 900;\n  line-height: 22px;\n  padding: 14px 27px 13px 27px;\n}\n@media screen and (min-width: 960px) {\n  .content .form .button {\n    flex-grow: 0;\n  }\n}\n.content .form .button:hover,\n.content .form .button:focus {\n  text-decoration: underline;\n  background-color: #59437a;\n}\n.content .form .secondary:hover,\n.content .form .secondary:focus {\n  background-color: transparent;\n}\n.content .form .button + .button {\n  margin-top: 24px;\n}\n"
+            }, 
+            "sort_order": -1.0, 
+            "layout": "modal", 
+            "name": "Modal \u2013 Stay Tuned", 
+            "settings": {}, 
+            "targeting": {
+                "group": {
+                    "items": [
+                        {
+                            "items": [
+                                {
+                                    "items": [
+                                        {
+                                            "operation": "matchUrl", 
+                                            "type": "location", 
+                                            "value": "/*"
+                                        }
+                                    ], 
+                                    "operation": "or"
+                                }
+                            ], 
+                            "operation": "and", 
+                            "id": "TargetingGroupLocation"
+                        }, 
+                        {
+                            "items": [
+                                 
+                                {
+                                    "operation": ">=", 
+                                    "type": "scrollPercent", 
+                                    "name": "", 
+                                    "value": 10
+                                }, 
+                                {
+                                    "operation": ">", 
+                                    "type": "timeIdle", 
+                                    "name": "", 
+                                    "value": 200
+                                } 
+                               
+                            ], 
+                            "operation": "or", 
+                            "id": "TargetingGroupStart"
+                        }
+                    ], 
+                    "operation": "and"
+                }, 
+                "data": {
+                    "timezones": {}
+                }
+            }, 
+            "type": "form", 
+            "id": 22099, 
+            "pages": [
+                {
+                    "type": "form", 
+                    "style": {
+                        "media": {
+                            "mobile": {
+                                "maxWidth": "414px", 
+                                "padding": {
+                                    "top": "16px", 
+                                    "right": "16px", 
+                                    "bottom": "16px", 
+                                    "left": "16px"
+                                }, 
+                                "width": "95%", 
+                                "background": [], 
+                                "images": [], 
+                                "overflow": "hidden"
+                            }, 
+                            "desktop": {
+                                "maxWidth": "none", 
+                                "padding": {
+                                    "top": "20px", 
+                                    "right": "20px", 
+                                    "bottom": "20px", 
+                                    "left": "20px"
+                                }, 
+                                "width": "576px", 
+                                "background": [], 
+                                "images": [], 
+                                "overflow": "hidden"
+                            }
+                        }
+                    }, 
+                    "data": {
+                        "buttons": [
+                            {
+                                "visible": true, 
+                                "type": "primary", 
+                                "actions": [
+                                    {
+                                        "type": "submit"
+                                    }
+                                ], 
+                                "label": "ENQUIRE"
+                            }, 
+                            {
+                                "visible": false, 
+                                "type": "secondary", 
+                                "actions": [
+                                    {
+                                        "type": "close"
+                                    }
+                                ], 
+                                "label": "Close"
+                            }
+                        ], 
+                        "description": "Please note, I'm on my annual leave & I will start taking bookings from the 9th of August.", 
+                        "title": "ALERT !", 
+                        "fields": [
+                            {
+                                "placeholder": "Enter your name", 
+                                "required": true, 
+                                "type": "text", 
+                                "name": "text", 
+                                "label": ""
+                            }, 
+                            {
+                                "name": "email", 
+                                "type": "email", 
+                                "required": true, 
+                                "value": "{email}", 
+                                "label": "", 
+                                "placeholder": "Your email address"
+                            }
+                        ], 
+                        "note": "", 
+                        "backgroundActions": []
+                    }, 
+                    "name": "page-1"
+                }, 
+                {
+                    "type": "form", 
+                    "style": {
+                        "media": {
+                            "mobile": {
+                                "maxWidth": "414px", 
+                                "padding": {
+                                    "top": "16px", 
+                                    "right": "16px", 
+                                    "bottom": "16px", 
+                                    "left": "16px"
+                                }, 
+                                "width": "95%", 
+                                "background": [], 
+                                "images": [], 
+                                "overflow": "hidden"
+                            }, 
+                            "desktop": {
+                                "maxWidth": "none", 
+                                "padding": {
+                                    "top": "20px", 
+                                    "right": "20px", 
+                                    "bottom": "20px", 
+                                    "left": "20px"
+                                }, 
+                                "width": "576px", 
+                                "background": [], 
+                                "images": [], 
+                                "overflow": "hidden"
+                            }
+                        }
+                    }, 
+                    "data": {
+                        "buttons": [
+                            {
+                                "visible": true, 
+                                "type": "primary", 
+                                "actions": [
+                                    {
+                                        "type": "close"
+                                    }
+                                ], 
+                                "label": "OK, GOT IT"
+                            }
+                        ], 
+                        "description": "Thank you for your enquire I will be in touch very soon.", 
+                        "title": "<div>Thank you!</div>", 
+                        "fields": [], 
+                        "label": "Label here", 
+                        "note": ""
+                    }, 
+                    "name": "page-2"
+                }
+            ]
+        }
+    ], 
+    "runtime": {
+        "events": [
+            "show", 
+            "submit", 
+            "openUrl", 
+            "showWidget"
+        ], 
+        "siteId": "xwkkez9w", 
+        "sessionLength": 20, 
+        "serverUrl": "https://dash.getsitecontrol.com/api/v1/events" 
+    }, 
+    "script": {
+        "mjs": "signUpJavaTwo.js", 
+        "mjsSolo": "signUpJavaTwo.js", 
+        "jsSolo": "signUpJavaTwo.js", 
+        "js": "signUpJavaTwo.js"
+    }
+}
+
